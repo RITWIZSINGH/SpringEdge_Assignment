@@ -1,22 +1,28 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: use_super_parameters
 
 import 'package:flutter/material.dart';
-import 'demologinpage.dart';
+import 'package:springedge_assignment/demologinpage.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DemoLoginPage(),
+      title: 'Demo Login Page',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+      ),
+      home: const DemoLoginPage(),
     );
-    
   }
 }
-
