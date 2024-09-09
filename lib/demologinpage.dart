@@ -9,37 +9,42 @@ class DemoLoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
-            flex: 3,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('demopage.png'),
-                  fit: BoxFit.cover,
+            flex: 1,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  image: DecorationImage(
+                    image: AssetImage('demopage.png'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
-              ),
-              child: Stack(
-                children: [
-                  Positioned(
-                    bottom: 20,
-                    left: 20,
-                    right: 20,
-                    child: Text(
-                      "Explore Demo Limited's Premier Logistics and Freight Services",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      bottom: 20,
+                      left: 20,
+                      right: 20,
+                      child: Text(
+                        "Explore Demo Limited's Premier Logistics and Freight Services",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: 1,
             child: Padding(
               padding: const EdgeInsets.all(32.0),
               child: Column(
@@ -123,8 +128,15 @@ class DemoLoginPage extends StatelessWidget {
                   SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {},
-                    child: Text('LOGIN'),
+                    child: Text(
+                      'LOGIN',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(64, 110, 152, 1.0),
                       padding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
