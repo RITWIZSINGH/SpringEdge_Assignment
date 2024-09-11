@@ -1,4 +1,4 @@
-// ignore_for_file: use_super_parameters
+// ignore_for_file: use_super_parameters, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:springedge_assignment/demologinpage.dart';
@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Demo Login Page',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         inputDecorationTheme: InputDecorationTheme(
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const DemoLoginPage(),
+      home: DemoLoginPage()
     );
   }
 }

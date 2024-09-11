@@ -12,7 +12,7 @@ class DemoLoginPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
-            flex: 2,
+            flex: 1,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -44,7 +44,7 @@ class DemoLoginPage extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: 1,
             child: Padding(
               padding: const EdgeInsets.all(32.0),
               child: Column(
