@@ -1,4 +1,4 @@
-Here’s the final `README.md` file that matches the structure of your project. You can directly copy and use it in your project:
+Here’s the updated `README.md` file with the correct screenshot path and name:
 
 ---
 
@@ -15,7 +15,7 @@ This repository contains the **Demo Login Page** for the **Spring Edge Assignmen
 
 ## Screenshot
 
-![Demo Login Page](assets/screenshot.png)
+![Demo Login Page](assets/springedgeassignment.png)
 
 > Note: The screenshot is saved in the `assets/` folder. Make sure you have the correct path in your `pubspec.yaml` file.
 
@@ -64,11 +64,17 @@ Ensure you have the following installed:
 ## Project Structure
 
 ```
-lib/
+springedge_assignment/
 │
-├── demologinpage.dart        # Contains the main UI for the login page.
-├── main.dart                 # Entry point of the application.
-└── assets/                   # Folder containing image assets like logos and screenshots.
+├── assets/                   # Folder containing image assets like logos and screenshots
+│   ├── demopage.png
+│   ├── demologo.png
+│   └── springedgeassignment.png
+├── lib/
+│   ├── demologinpage.dart     # Contains the main UI for the login page
+│   └── main.dart              # Entry point of the application
+├── pubspec.yaml               # Flutter project configuration
+└── README.md                  # Readme file
 ```
 
 ## Configuration
@@ -80,7 +86,7 @@ flutter:
   assets:
     - assets/demopage.png
     - assets/demologo.png
-    - assets/screenshot.png
+    - assets/springedgeassignment.png
 ```
 
 ## License
@@ -88,4 +94,3 @@ flutter:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
